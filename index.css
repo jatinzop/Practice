@@ -1,0 +1,49 @@
+
+body{
+    background-color: beige;
+    
+}
+
+ /* .form{
+    position: relative;
+} */
+
+.password-input{
+    margin: 100px;
+}
+.username-input{
+    margin: 100px;
+}
+
+.form input{
+    background: none;
+    position: absolute;
+    padding: 20px;
+    border-radius: 5px;
+    
+   
+} 
+
+input:hover {
+    border-color: pink;
+}
+
+input:focus {
+    border-color: azure;
+}
+
+.form label{
+    position: relative;
+    padding: 20px;
+    top: 20px;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~.form-label
+{
+    top: -1.5rem;
+    left: -1.2rem;
+}
+
